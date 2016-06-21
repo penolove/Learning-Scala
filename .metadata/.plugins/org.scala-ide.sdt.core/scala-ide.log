@@ -454,3 +454,14 @@ Standard error:
 ??ñË?? JavaFX ??âÁî®Á®ãÂ?èÈ?ûÂà•ÂøÖÈ?àÊì¥??? javafx.application.Application
 
 
+2016-06-20 19:07:08,216  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for progfun1-recfun, setting default to 2.11.
+2016-06-20 19:07:08,217  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for progfun1-recfun, setting default to 2.11.
+2016-06-20 19:07:48,172 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-06-20 19:07:48,174 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-06-20 19:07:48,175 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-06-20 19:07:48,176 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-06-21 09:14:08,547  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for progfun1-objsets, setting default to 2.11.
+2016-06-21 09:14:08,549  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for progfun1-objsets, setting default to 2.11.
+2016-06-21 09:22:50,489 ERROR [Worker-14] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2016-06-21 09:22:50,490 ERROR [Worker-14] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2016-06-21 09:22:50,490 ERROR [Worker-14] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.

@@ -54,7 +54,7 @@ abstract class TweetSet {
    * Question: Should we implment this method here, or should it remain abstract
    * and be implemented in the subclasses?
    */
-    def union(that: TweetSet): TweetSet = filterAcc(tweet => true, that)
+    def union(that: TweetSet): TweetSet 
   
   /**
    * Returns the tweet from this set which has the greatest retweet count.
@@ -77,16 +77,7 @@ abstract class TweetSet {
    * Question: Should we implment this method here, or should it remain abstract
    * and be implemented in the subclasses?
    */
-    def descendingByRetweet: TweetList = {
-      def loop(in: TweetSet, ts: TweetList): TweetList = {
-        if (in.isEmpty) ts
-        else {
-          val mostPopularTweet = in.mostRetweeted
-          new Cons(mostPopularTweet, loop(in.remove(mostPopularTweet), ts))
-        }
-      }
-      loop(this, Nil)
-    }
+    def descendingByRetweet: TweetList
   
   /**
    * The following methods are already implemented
@@ -119,12 +110,12 @@ abstract class TweetSet {
 class Empty extends TweetSet {
     def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = acc
 
-    //def union (that : TweetSet) = that
+    def union (that : TweetSet) = that
     
     def isEmpty = true
     
     def mostRetweeted: Tweet = throw new NoSuchElementException
-    
+    def descendingByRetweet: TweetList = Nil
   /**
    * The following methods are already implemented
    */
@@ -149,17 +140,30 @@ class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
       else leftright
     }
     
-    //def union (that : TweetSet) = ((left union right) union that) incl elem
+    def union (that : TweetSet) = ((left union right) union that) incl elem
     
     def isEmpty = false
     
-    def mostRetweeted: Tweet = {
-       val all = right.union(left);
-       val morePopular = all.filter(p => p.retweets > elem.retweets)
-       if (morePopular.isEmpty) elem else morePopular.mostRetweeted
+    def mostRetweeted:Tweet = {
+      //avoiding left or right empty => lazy 
+  		lazy val leftMost = left.mostRetweeted
+  		lazy val rightMost = right.mostRetweeted
+  		// if empty leftmost calculate
+  		if( !left.isEmpty && leftMost.retweets > elem.retweets )
+  			if( !right.isEmpty && rightMost.retweets > leftMost.retweets )
+  				rightMost
+  			else
+  				leftMost
+  		else if( !right.isEmpty && rightMost.retweets > elem.retweets )
+  			rightMost
+  		else
+			  elem
     }
-      
     
+    
+  	def descendingByRetweet: TweetList = {
+  		new Cons(mostRetweeted, remove(mostRetweeted).descendingByRetweet)
+  	}
   /**
    * The following methods are already implemented
    */
