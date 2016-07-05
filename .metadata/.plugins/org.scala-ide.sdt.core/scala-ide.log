@@ -465,3 +465,22 @@ Standard error:
 2016-06-21 09:22:50,489 ERROR [Worker-14] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 2016-06-21 09:22:50,490 ERROR [Worker-14] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
 2016-06-21 09:22:50,490 ERROR [Worker-14] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2016-06-29 11:00:10,585  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for progfun1-objsets, setting default to 2.11.
+2016-06-29 11:00:10,606  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for progfun1-objsets, setting default to 2.11.
+2016-06-29 11:00:52,334  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for progfun1-objsets, setting default to 2.11.
+2016-06-29 11:00:52,336  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for progfun1-objsets, setting default to 2.11.
+2016-06-29 11:01:35,885 ERROR [Worker-1] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2016-06-29 11:01:35,885 ERROR [Worker-1] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2016-06-29 11:01:35,885 ERROR [Worker-1] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2016-06-29 12:15:09,983  WARN [ModalContext] - ScalaProject - Project progfun1-patmat has platform default sourceLevel.
+2016-06-29 12:15:09,983  WARN [ModalContext] - ScalaProject - Project progfun1-patmat runs on platform default installation.
+2016-06-29 12:15:10,024  WARN [ModalContext] - ScalaProject - Project progfun1-patmat has platform default sourceLevel.
+2016-06-29 12:15:10,024  WARN [ModalContext] - ScalaProject - Project progfun1-patmat runs on platform default installation.
+2016-06-29 12:27:14,557 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-06-29 12:27:14,558 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-06-29 12:27:14,559 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-06-29 12:29:18,704 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-06-29 12:29:18,705 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-06-29 13:13:27,496  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2016-07-05 11:24:16,193  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for progfun1-patmat, setting default to 2.11.
+2016-07-05 11:24:16,194  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for progfun1-patmat, setting default to 2.11.

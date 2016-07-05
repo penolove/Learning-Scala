@@ -1,0 +1,4 @@
+object www {
+  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+  val qq =List(List(1,2,3),List(1,2,3),List(1,2)) //> qq  : List[List[Int]] = List(List(1, 2, 3), List(1, 2, 3), List(1, 2))
+}
